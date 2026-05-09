@@ -1,2 +1,1 @@
-# clipboard-manager
-A minimal cross-platform clipboard history manager with fuzzy search
+# clipboard-manager\n\nCross-platform clipboard history with fuzzy search.\n\n## Features\n- Background monitoring\n- Fuzzy search\n- CLI interface\n\n## License\nMIT\n
