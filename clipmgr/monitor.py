@@ -6,7 +6,6 @@ class ClipboardMonitor:
         self.max_history = max_history
         self.history = []
         self._running = False
-        self._thread = None
         self._last = None
 
     def _get_clipboard(self):
@@ -30,8 +29,7 @@ class ClipboardMonitor:
 
     def start(self):
         self._running = True
-        self._thread = threading.Thread(target=self._poll, daemon=True)
-        self._thread.start()
+        threading.Thread(target=self._poll, daemon=True).start()
 
     def stop(self):
         self._running = False
