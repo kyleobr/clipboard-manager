@@ -1,2 +1,2 @@
-"""clipboard-manager: cross-platform clipboard history"""
+"""clipboard-manager"""
 __version__ = "1.0.3"
